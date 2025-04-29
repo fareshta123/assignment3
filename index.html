@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌤Ghezal Cinema🌤</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicone.ico.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section>
+        <div >
+            <h1 > Welcome to <br>👑Ghezal Movie Theater 👑 </h1>
+            <br>
+            <br>
+            <section >
+                <h2 class="about ">About the Movie</h2>
+                <p  class="about ">✨Editore :✨ Fareshta Mohmand✨<br>✨ Motivational Video✨ <br>✨ Release on: 2025✨</p>
+    
+                <br>
+                <br>
+                <br>
+                <p class="about "  style="background-color: #EFE1D1;"><b>⭐💫✨ If you wanted a different life , you had to make different choices ✨💫⭐</b>
+                    
+                </p>
+              </section>
+              <br>
+              <br>
+
+        </div>
+
+        
+      
+          
+
+        <div id="div1" >
+            <video  controls>
+                <source src="AQMUFDS1l63co57UxxdkoDUv_nVffJbjOXE1ZIQfStZWZtdZKPVVVPUwjXiA09sdcSfHk.mp4" >
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+
+
+         
+
+          <div >
+           
+            <button onclick="playAgain()" >💫Play Again💫</button>
+            <button onclick="rateMovie()" >⭐ Rate Movie ⭐</button>
+            
+           
+        </section>
+        </div>
+        
+
+    <script>
+        function playAgain() {
+            const video = document.getElementById('trailer');
+            video.currentTime = 0;
+            video.play();
+        }
+        
+        function rateMovie() {
+            let rating = prompt("Rate the movie from 1 to 4 stars!");
+            if (rating) {
+                alert(`Thanks for rating us ${rating} stars!`);
+            }
+        }
+        </script>
+        
+    
+    
+</body>
+<footer>
+    <h1 id="foot"> ⭐Thanks for Watching⭐ </h1>
+</footer>
+</html>
